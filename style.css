@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  /*background: #fbf7f2;*/
+  padding: 15px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 8px);
+  gap: 3px;
+}
+
+.logo-icon span {
+  width: 8px;
+  height: 8px;
+  background: #111;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn {
+  text-decoration: none;
+  color: #111;
+  padding: 8px 18px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+}
+
+.primary-btn {
+  text-decoration: none;
+  background: #9db25d;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 600px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-btn {
+  display: inline-block;
+}
+
+.nav-links {
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
+.hero-images {
+    position: relative;       
+    width: 100%;
+    max-width: 900px;       
+    margin: 3rem auto;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.hero-image1 {
+    width: 100%;            
+}
+
+/* Overlay image */
+.hero-image2 {
+    position: absolute;
+    width: 50%;             
+    bottom: -20px;           
+    right: 20px;             
+}
+
+
+.testimonials {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #fff;
+}
+.testimonials h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.testimonials p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+.testimonial-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonial {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.testimonial img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.testimonial h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero-image2 {
+    display: none;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+}
